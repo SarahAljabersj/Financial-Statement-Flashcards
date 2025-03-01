@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 34, term: "Treasury Stock", statement: "Balance Sheet", category: "Stockholders' Equity" },
         { id: 35, term: "Retained Earnings", statement: "Balance Sheet and Retained Earnings Statement", category: "Stockholders' Equity" },
         { id: 36, term: "Dividends", statement: "Retained Earnings Statement", category: "Temporary Account" },
-        { id: 37, term: "Income Summary", statement: "Not Applicable", category: "Temporary Account" },
+        
 
         // Revenues
         { id: 38, term: "Service Revenue", statement: "Income Statement", category: "Revenue" },
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Create statement filter buttons
     function createStatementFilter() {
-        const statements = ["All", "Balance Sheet", "Income Statement", "Retained Earnings Statement", "Not Applicable"];
+        const statements = ["All", "Balance Sheet", "Income Statement", "Retained Earnings Statement"];
         
         statements.forEach(statement => {
             const button = document.createElement('button');
